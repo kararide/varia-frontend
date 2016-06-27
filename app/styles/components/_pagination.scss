@@ -1,0 +1,18 @@
+.pagination {
+  text-align: center;
+  margin: 30px 0;
+  span {
+    border: 1px solid $grey;
+    padding: 5px 0;
+    &:hover {
+      border: 1px solid $red;
+    }
+    a {
+      color: $grey;
+      padding: 10px;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}

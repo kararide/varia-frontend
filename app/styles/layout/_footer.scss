@@ -1,0 +1,30 @@
+footer {
+  background: $base;
+  min-height: 100px;
+  height: auto;
+  width: 100%;
+  margin: 10px 0 0 0;
+  display: block;
+}
+.links {
+  text-align: center;
+  display: inline;
+  ul li {
+    margin: 0;
+    display: inline;
+    padding: 0 5px;
+    a {
+      color: $dark;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}
+.blog-links {
+  font-weight: 600;
+  padding: 7px 0;
+  border-bottom: 1px dashed $grey;
+  margin-left: 10%;
+  margin-right: 10%;
+}

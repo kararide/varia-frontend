@@ -1,0 +1,56 @@
+.container {
+  @include media($S){
+    header {
+      @include span-columns(12);
+    }
+    .sidebar {
+      @include span-columns(12);
+    }
+    .blog {
+      @include span-columns(12);
+    }
+    footer {
+      @include span-columns(12);
+      @include omega;
+    }
+  }
+  @include media($M){
+    header {
+      @include span-columns(12);
+    }
+    .sidebar {
+      @include span-columns(12);
+    }
+    .blog {
+      @include span-columns(12);
+    }
+    footer {
+      @include span-columns(12);
+      @include omega;
+    }
+  }
+  @include media($L) {
+    header {
+      @include span-columns(12);
+    }
+    .content {
+      @include span-columns(12);
+      .sidebar {
+        @include span-columns(4);
+      }
+      .blog {
+        @include span-columns(8);
+      }
+    }
+    //.sidebar {
+    //  @include span-columns(4);
+    //}
+    //.blog {
+    //  @include span-columns(8);
+    //}
+    footer {
+      @include span-columns(12);
+      @include omega;
+    }
+  }
+}

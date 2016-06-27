@@ -1,0 +1,38 @@
+body, html {
+  background: lighten($grey, 10%);
+  color: $dark;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: $red;
+}
+.container {
+  padding: 0;
+  margin: 0;
+}
+.page-wrap {
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  &:after {
+    content: "";
+    display: block;
+  }
+  @media screen and (min-width: $M) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+.clearfix {
+  clear: both;
+}
+ul {
+  list-style-type: none;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
