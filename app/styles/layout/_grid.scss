@@ -21,7 +21,7 @@
     .sidebar {
       @include span-columns(12);
     }
-    .blog, .project {
+    .blog {
       @include span-columns(12);
     }
     footer {
@@ -38,7 +38,7 @@
       .sidebar {
         @include span-columns(4);
       }
-      .blog, .project {
+      .blog {
         @include span-columns(8);
       }
     }
