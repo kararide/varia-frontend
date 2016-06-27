@@ -45,7 +45,6 @@ nav.top-nav.nav-expanded {
   display: block;
 }
 @media screen and (min-width: $S) {
-
   nav.top-nav {
     display: block;
     margin: 0 2% 25px 2%;
@@ -79,17 +78,21 @@ nav.top-nav.nav-expanded {
         top: 30px;
         left: 0;
         background-color: $base;
-        min-width: 150px;
+        min-width: 130px;
         z-index: 1;
         a {
           padding: 7px;
           display: block;
           border: none;
+          &:hover {
+            color: $base;
+            background: $red;
+          }
         }
       }
       .dropdown:hover .dropdown-content {
         display: block;
-        border-left: 1px solid $red;
+        border-left: 2px solid $red;
       }
     }
   }
