@@ -8,6 +8,9 @@ body, html {
 a {
   text-decoration: none;
   color: $red;
+  &:hover {
+    color: $dark;
+  }
 }
 .container {
   padding: 0;

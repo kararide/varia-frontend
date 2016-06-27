@@ -1,6 +1,6 @@
 footer {
   background: $base;
-  min-height: 100px;
+  min-height: 150px;
   height: auto;
   width: 100%;
   margin: 10px 0 0 0;
@@ -14,6 +14,7 @@ footer {
     display: inline;
     padding: 0 5px;
     &:after {
+      font-weight: 300;
       content: "\00d7";
       padding-left: 10px;
     }
@@ -36,4 +37,5 @@ footer {
   border-bottom: 1px dashed $grey;
   margin-left: 10%;
   margin-right: 10%;
+  padding-top: 30px;
 }

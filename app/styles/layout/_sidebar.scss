@@ -1,4 +1,9 @@
 .sidebar {
   background: $base;
-  //padding-top: 5px;
+  margin-top: 15px;
+  padding-top: 5px;
+  @media screen and (min-width: $M) {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
