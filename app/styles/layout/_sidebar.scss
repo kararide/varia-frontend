@@ -1,6 +1,7 @@
 .sidebar {
   background: $base;
   padding-top: 15px;
+  margin-top: 0;
   @media screen and (min-width: $M) {
     padding-top: 0;
   }
