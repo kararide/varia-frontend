@@ -1,12 +1,10 @@
 ol {
   text-align: left;
   li {
-    font-weight: 600;
     padding-bottom: 15px;
   }
 }
 ol li p {
-  font-weight: 400;
   &:before {
     padding-right: 5px;
     font-weight: 300;
