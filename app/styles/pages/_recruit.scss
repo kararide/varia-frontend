@@ -1,0 +1,36 @@
+.recruit-img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border: 1px solid $grey;
+}
+#recruit p {
+  text-align: left;
+}
+#recruit ol {
+  list-style-type: hiragana;
+}
+#recruit ul {
+  list-style-type: circle;
+}
+#recruit li {
+  text-align: left;
+}
+.bold {
+  font-weight: 600;
+}
+.tests {
+  padding: 10px;
+}
+a.test-button {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid $grey;
+  color: $grey;
+  &:hover {
+    color: $red;
+    border-color: $red;
+  }
+}
+
+
