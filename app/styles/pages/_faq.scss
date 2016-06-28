@@ -1,0 +1,20 @@
+ol {
+  text-align: left;
+  li {
+    font-weight: 600;
+    padding-bottom: 15px;
+  }
+}
+ol li p {
+  font-weight: 400;
+  &:before {
+    padding-right: 5px;
+    font-weight: 300;
+    content: "\00d7";
+  }
+}
+.last-line {
+  padding-top: 30px;
+  font-style: italic;
+  text-align: right;
+}

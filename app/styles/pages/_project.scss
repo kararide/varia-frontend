@@ -48,6 +48,9 @@ table {
     width: 20%;
     padding: 5px;
   }
+  td {
+    @include font-size(14px);
+  }
   th {
     background: lighten($grey, 20%);
   }
