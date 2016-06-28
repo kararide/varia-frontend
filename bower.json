@@ -2,6 +2,7 @@
   "name": "varijka-frontend",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "packery": "~2.1.1"
   }
 }

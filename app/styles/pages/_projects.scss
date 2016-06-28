@@ -1,25 +1,29 @@
-.projects {
+#projects {
   display: block;
   margin: 10px auto;
   padding: 10px;
   overflow: hidden;
   clear: both;
 }
-.projects-list {
-  vertical-align: top;
-  margin: 0 auto;
+.mosaic-grid {
   a {
     vertical-align: top;
     display: inline-block;
     margin: 3px;
     padding: 10px;
     border: 1px solid $grey;
-    height: 300px;
-    width: auto;
-    max-width: 250px;
+    max-width: 225px;
+    min-width: 175px;
+    h4.project-name {
+      color: $dark;
+      text-align: center;
+      margin: 5px 0 0 0;
+      padding: 3px;
+      border-top: 1px solid $grey;
+      border-bottom: 1px solid $grey;
+    }
     img {
       display: block;
-      height: 100%;
       width: 100%;
     }
   }
