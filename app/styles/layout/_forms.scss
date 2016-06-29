@@ -5,7 +5,8 @@ form {
     text-align: left;
     font-weight: 600;
   }
-  input[type="text"] {
+  input[type="text"],
+  input[type="password"] {
     padding: 5px;
     display: block;
     margin: 10px 0;
