@@ -6,36 +6,35 @@ footer {
   margin: 10px 0 0 0;
   display: block;
 }
-.links {
+footer .links {
   text-align: center;
   display: inline;
-  ul li {
-    margin: 0;
-    display: inline;
-    padding: 0 5px;
+}
+.links  ul li {
+  margin: 0;
+  display: inline;
+  padding: 0 5px;
+  &:after {
+    font-weight: 300;
+    content: "\00d7";
+    padding-left: 10px;
+  }
+  &:last-child {
     &:after {
-      font-weight: 300;
-      content: "\00d7";
-      padding-left: 10px;
+      content: '';
     }
-    &:last-child {
-      &:after {
-        content: '';
-      }
-    }
-    a {
-      color: $dark;
-      &:hover {
-        color: $red;
-      }
-    }
+  }
+}
+.links ul li a {
+  color: $dark;
+  &:hover {
+    color: $red;
   }
 }
 .blog-links {
   font-weight: 600;
-  padding: 7px 0;
+  padding: 20px 0 15px 0;
   border-bottom: 1px dashed $grey;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 30px;
 }

@@ -1,0 +1,55 @@
+header .logo {
+  margin: 0;
+  padding: 0;
+  max-width: 1150px;
+  height: auto;
+  img {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: $base;
+  }
+}
+.recruit-img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border: 1px solid $grey;
+}
+.page-content img {
+  padding: 10px;
+  border: 1px solid $grey;
+}
+.post-body img {
+  display: block;
+  width: 100%;
+  height: 125px;
+  margin: 0 auto;
+}
+.project-info  img {
+  display: block;
+  max-width: 350px;
+  width: calc(100% - 20px);
+  height: auto;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid $grey;
+}
+@media screen and (min-width: $S) {
+  .project-info img {
+    max-width: 350px;
+    width: 50%;
+    float: left;
+    margin: 5px 10px;
+  }
+}
+.mosaic-grid a img {
+  display: block;
+  width: 100%;
+}
+#crew img {
+  padding: 0;
+  border: none;
+}

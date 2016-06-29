@@ -1,37 +1,8 @@
-.project-header {
-  text-align: center;
-  border-top: 1px solid $grey;
-  border-bottom: 1px solid $grey;
-  padding: 10px;
-  margin: 5px 10px;
-  h2.main-title {
-    padding: 0;
-    margin: 0;
-    @include font-size(20px);
-    font-weight: 600;
-  }
-  h3.sub-title {
-    @include font-size(14px);
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-  }
-}
 .project-info {
   margin: 10px;
   padding: 10px;
-  img {
-    display: block;
-    max-width: 350px;
-    width: calc(100% - 20px);
-    height: auto;
-    margin: 10px auto;
-    padding: 10px;
-    border: 1px solid $grey;
-  }
   p {
     margin: 10px 5px 0 5px;
-    //padding: 0;
   }
 }
 .chapters {
@@ -56,17 +27,5 @@ table {
   }
   tr:nth-child(even) {
     background: lighten($grey, 30%);
-  }
-}
-@media screen and (min-width: $S) {
-  .project-info {
-    //background: green;
-    img {
-      max-width: 350px;
-      width: 50%;
-      float: left;
-      margin: 5px 10px;
-
-    }
   }
 }

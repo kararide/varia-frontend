@@ -9,9 +9,6 @@ span.rwd-menu {
   @include font-size(22px);
   cursor: pointer;
   margin: 0;
-  @media screen and (min-width: $S) {
-    display: none;
-  }
 }
 nav.top-nav {
   margin: 0;
@@ -23,28 +20,32 @@ nav.top-nav {
     padding: 0;
     background-color: $base-nav;
     @include font-size(18px);
-    li {
-      float: none;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      a {
-        color: $extra-nav;
-        padding: 7px;
-        display: block;
-        margin: 0;
-        border-bottom: 1px solid lighten($base-nav,20%);
-      }
-      ul {
-        background-color: darken($base-nav, 5%);
-      }
-    }
+  }
+}
+
+nav.top-nav ul li {
+  float: none;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  a {
+    color: $extra-nav;
+    padding: 7px;
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid lighten($base-nav,20%);
+  }
+  ul {
+    background-color: darken($base-nav, 5%);
   }
 }
 nav.top-nav.nav-expanded {
   display: block;
 }
 @media screen and (min-width: $S) {
+  span.rwd-menu {
+    display: none;
+  }
   nav.top-nav {
     display: block;
     margin: 0 2% 25px 2%;
@@ -54,47 +55,47 @@ nav.top-nav.nav-expanded {
       display: inline;
       background: $extra-nav;
       text-align: center;
-      li {
-        display: inline;
-        text-align: center;
-        a {
-          display: inline;
-          text-align: center;
-          color: $base-nav;
-          font-weight: 400;
-          border-bottom: none;
-          &:hover, .active {
-            color: $red;
-          }
-        }
-      }
-      .dropdown {
-        position: relative;
-        display: inline;
-      }
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        top: 30px;
-        left: 0;
-        background-color: $base;
-        min-width: 130px;
-        z-index: 1;
-        a {
-          padding: 7px;
-          display: block;
-          border: none;
-          &:hover {
-            color: $base;
-            background: $red;
-          }
-        }
-      }
-      .dropdown:hover .dropdown-content {
-        display: block;
-        border-left: 2px solid $red;
+    }
+  }
+  nav.top-nav ul.base-nav li {
+    display: inline;
+    text-align: center;
+    a {
+      display: inline;
+      text-align: center;
+      color: $base-nav;
+      font-weight: 400;
+      border-bottom: none;
+      &:hover, .active {
+        color: $red;
       }
     }
+  }
+  nav.top-nav ul.base-nav .dropdown {
+    position: relative;
+    display: inline;
+  }
+  nav.top-nav ul.base-nav .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: $base;
+    min-width: 130px;
+    z-index: 1;
+    a {
+      padding: 7px;
+      display: block;
+      border: none;
+      &:hover {
+        color: $base;
+        background: $red;
+      }
+    }
+  }
+  nav.top-nav ul.base-nav .dropdown:hover .dropdown-content {
+    display: block;
+    border-left: 2px solid $red;
   }
 }
 @media screen and (min-width: $L) {
