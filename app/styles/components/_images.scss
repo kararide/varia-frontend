@@ -46,8 +46,9 @@ header .logo {
   }
 }
 .mosaic-grid a img {
-  display: block;
+  //display: block;
   width: 100%;
+  vertical-align:top;
 }
 #crew img {
   padding: 0;

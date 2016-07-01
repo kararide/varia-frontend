@@ -68,34 +68,34 @@
             <div id="projects">
               <div id="mosaic-grid" class="mosaic-grid">
                 <a href="/" class="grid-item">
-                  <img src="images/200.jpg" alt="">
+                  <img src="images/200.jpg" alt="" data-echo-background>
                   <h4 class="project-name">Kagami no Kuni no Harisugawa</h4>
                 </a>
                 <a href="/" class="grid-item">
-                  <img src="images/250.jpg" alt="">
+                  <img src="images/250.jpg" alt="" data-echo-background>
                   <h4 class="project-name">Super długaśny tyttuł jakiegoś projektu</h4>
                 </a>
                 <a href="/" class="grid-item">
-                  <img src="images/300.jpg" alt="">
+                  <img src="images/300.jpg" alt="" data-echo-background>
                   <h4 class="project-name">Nurarihyon no Mago</h4>
                 </a>
                 <a href="/" class="grid-item">
-                  <img src="images/350.jpg" alt="">
+                  <img src="images/350.jpg" alt="" data-echo-background>
                   <h4 class="project-name">Nurarihyon no Mago</h4>
                 </a>
                 <a href="/" class="grid-item">
+                  <img src="images/200.jpg" alt="" data-echo-background>
+                  <h4 class="project-name">Nurarihyon no Mago</h4>
+                </a>
+                <a href="/" class="grid-item" data-echo-background>
                   <img src="images/200.jpg" alt="">
                   <h4 class="project-name">Nurarihyon no Mago</h4>
                 </a>
-                <a href="/" class="grid-item">
-                  <img src="images/200.jpg" alt="">
-                  <h4 class="project-name">Nurarihyon no Mago</h4>
-                </a>
-                <a href="/" class="grid-item">
+                <a href="/" class="grid-item" data-echo-background>
                   <img src="images/250.jpg" alt="">
                   <h4 class="project-name">Nurarihyon no Mago</h4>
                 </a>
-                <a href="/" class="grid-item">
+                <a href="/" class="grid-item" data-echo-background>
                   <img src="images/200.jpg" alt="">
                   <h4 class="project-name">Nurarihyon no Mago</h4>
                 </a>
@@ -146,6 +146,8 @@
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/bower_components/packery/dist/packery.pkgd.min.js"></script>
+<script src="/bower_components/echojs/dist/echo.min.js"></script>
+
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -158,10 +160,16 @@
 
 <script>
   $(document).ready(function() {
-    $('#mosaic-grid').packery({
-      // options
-      itemSelector: '.grid-item',
-      gutter: 1
+    echo.init({
+      offset: 0,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        $('#mosaic-grid').packery({
+          itemSelector: '.grid-item',
+          gutter: 1
+        });
+      }
     });
   });
 </script>
