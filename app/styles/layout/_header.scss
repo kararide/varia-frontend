@@ -6,12 +6,12 @@ header {
 @media screen and (min-width: $L) {
   header {
     padding: 25px 0;
-    .logo {
-      display: inline-block;
-      img {
-        margin: 0;
-        padding: 35px 0 35px 15px;
-      }
+  }
+  header .logo {
+    display: inline-block;
+    img {
+      margin: 0;
+      padding: 35px 0 35px 15px;
     }
   }
 }

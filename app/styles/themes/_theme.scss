@@ -12,17 +12,24 @@ body, html {
 .page-wrap {
   min-height: 100%;
   max-width: 1200px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   &:after {
     content: "";
     display: block;
   }
-  @media screen and (min-width: $M) {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
 }
 .clearfix {
   clear: both;
+}
+@media screen and (min-width: $S) {
+  .content {
+    background: $base;
+  }
+}
+@media screen and (min-width: $M) {
+  .page-wrap {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
