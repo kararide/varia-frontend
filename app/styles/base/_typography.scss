@@ -1,3 +1,17 @@
 body, textarea {
   font-family: 'Open Sans', sans-serif;
 }
+a {
+  text-decoration: none;
+  color: $red;
+  &:hover {
+    color: $dark;
+  }
+}
+ul {
+  list-style-type: none;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}

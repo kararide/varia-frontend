@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "jquery": "~2.1.4",
-    "packery": "~2.1.1"
+    "packery": "~2.1.1",
+    "echojs": "~1.7.3"
   }
 }
