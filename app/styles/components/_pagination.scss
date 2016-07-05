@@ -10,7 +10,7 @@
     }
   }
 }
-.pagination span a {
+.pagination span {
   color: $grey;
   padding: 10px;
   &:hover {
@@ -26,4 +26,7 @@
 span.disabled {
   padding: 5px 0;
   border: none;
+  &:hover {
+    border: none;
+  }
 }
