@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 body, html {
   background: lighten($grey, 10%);
   color: $dark;
@@ -10,14 +13,21 @@ body, html {
   margin: 0;
 }
 .page-wrap {
-  min-height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  &:after {
-    content: "";
-    display: block;
-  }
+  min-height: calc(100vh - 150px);
+  /* equal to footer height */
+  margin:  0 auto 0 auto;
 }
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+footer, .page-wrap:after {
+  height: 150px;
+}
+.page-wrap {
+  max-width: 1200px;
+}
+
 .clearfix {
   clear: both;
 }
