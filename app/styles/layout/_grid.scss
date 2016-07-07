@@ -3,6 +3,9 @@
     header {
       @include span-columns(12);
     }
+    .content {
+      @include span-columns(12);
+    }
     .sidebar {
       @include span-columns(12);
     }
