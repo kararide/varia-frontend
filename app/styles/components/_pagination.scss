@@ -1,7 +1,7 @@
 .pagination {
   text-align: center;
   margin: 30px 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   span {
     border: 1px solid $grey;
     padding: 5px 0;
@@ -10,7 +10,7 @@
     }
   }
 }
-.pagination span {
+.pagination span a {
   color: $grey;
   padding: 10px;
   &:hover {

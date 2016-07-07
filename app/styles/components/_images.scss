@@ -24,9 +24,11 @@ header .logo {
 }
 .post-body img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  width: auto;
   height: auto;
   margin: 0 auto;
+  padding: 10px 0;
 }
 .project-info  img {
   display: block;
@@ -52,4 +54,8 @@ header .logo {
 #crew img {
   padding: 0;
   border: none;
+  width: auto;
+  height: 100%;
+  display: block;
+  margin: 5px auto;
 }

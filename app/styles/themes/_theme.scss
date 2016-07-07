@@ -2,7 +2,7 @@
   margin: 0;
 }
 body, html {
-  background: lighten($grey, 10%);
+  background: $bg;
   color: $dark;
   margin: 0;
   padding: 0;
@@ -21,13 +21,15 @@ body, html {
   content: "";
   display: block;
 }
-footer, .page-wrap:after {
+footer {
   height: 150px;
 }
 .page-wrap {
   max-width: 1200px;
 }
-
+.content {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
 .clearfix {
   clear: both;
 }
