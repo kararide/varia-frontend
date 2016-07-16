@@ -122,6 +122,14 @@ a.more {
       background: $red;
     }
   }
+  #disqus_thread {
+    a {
+      color: $dark;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
 }
 .chapters-list {
   padding-top: 20px;
